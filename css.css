@@ -18,7 +18,7 @@ ul li {
   margin-right: auto;
 }
 
-
+/* start header */
 header {
   height:580px ;
   background-image:url(img/landing.jpg) ;
@@ -50,8 +50,8 @@ header nav ul li  a {
 
 header nav ul li a.active,
 header nav ul li a:hover {
-  color: blue;
-  border-bottom: 1px solid blue;
+  color: rgb(3, 117, 184);
+  border-bottom: 1px solid rgb(3, 117, 184);
   z-index: 2;
 }
 
@@ -89,14 +89,25 @@ header .container::after {
 }
 
 
-nav ul {
-    display: flex;
-
-}
-
 .container a img {
   width:130px
 }
+
+header nav .fa-bars  {
+  color: white;
+  font-size: x-large;
+}
+
+@media (min-width:500px){
+  header nav .fa-bars {
+    display: none;
+  }
+
+}
+
+/* end header */
+
+
 
 /* screen smal  */
 @media (min-width:768px) {
